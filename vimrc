@@ -7,13 +7,12 @@ set runtimepath^=~/.vim/bundle/fzf.vim
 set runtimepath^=~/.vim/bundle/vimux
 set runtimepath^=~/.vim/bundle/lightline.vim
 set runtimepath^=~/.vim/bundle/vim-vue
-set runtimepath^=~/.vim/bundle/vim-pug
 set runtimepath^=~/.vim/bundle/vim-less
 
 set number
 
 set t_Co=256
-colorscheme papercolor 
+colorscheme PaperColor 
 set background=light
 
 packloadall
