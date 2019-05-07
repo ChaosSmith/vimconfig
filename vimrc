@@ -18,6 +18,9 @@ set background=light
 packloadall
 silent! helptags ALL
 
+let g:ale_completion_enabled = 1
+let g:ale_fix_on_save = 1
+
 set nocompatible
 filetype plugin on
 syntax enable
@@ -29,6 +32,10 @@ let g:lightline = {}
 let g:lightline.colorscheme = 'PaperColor'
 let g:lightline.active = {}
 let g:lightline.active.left = [ [ 'mode', 'paste' ], [ 'readonly', 'absolutepath', 'modified' ] ]
+
+" Package/Plugins Configuration
+nnoremap <C-p> :Files<Cr>
+set rtp+=/usr/local/opt/fzf
 
 " set tabs to have 4 spaces
 set ts=2
